@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <%- include('common/header.ejs')%>
+    <div class="container-fluid">
+
+       <div class="row">
+        <div class="col-md-12 col-sm-6">
+          
+             <div>
+                <img src="/assets/image/school.jpg" target="image" style="width:100%; height: 600px;"
+            </div>    
+
+  <div class="container-fluid p-3">
+         <div class="row g-5 mb-5">
+             <div class="col-lg-4 ">
+                 <div class="d-flex flex-column align-items-center bg-primary rounded text-center py-5 px-3">
+                     <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center mb-3"style="height:50">
+                         <i class="fa fa-map-marker-alt fs-4 text-white"></i>
+                     </div>
+                           <h5 class="text-uppercase text-white">Visit Us</h5>
+                           <p class="text-white mb-0">Govt.Co-Ed Sr Sec School Dwarka, Sector 10,New Delhi</p>
+                     </div>
+             </div>
+ 
+             <div class="col-lg-4 ">
+                 <div class="d-flex flex-column align-items-center bg-primary rounded text-center py-5 px-3">
+                     <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center mb-3"style="height:50">
+                         <i class="fa fa-envelope fs-4 text-warning"></i>
+                     </div>
+                     <h5 class="text-uppercase text-white">Email Us</h5>
+                     <p class="text-white mb-0">dwakagovt@999.com</p>
+                 </div>
+             </div>
+             <div class="col-lg-4 bg-light">
+                 <div class="d-flex flex-column align-items-center bg-primary rounded text-center py-5 px-3">
+                     <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center mb-3" style="height:50">
+                         <i class="fa fa-phone fs-4 text-white"></i>
+                     </div>
+                     <h5 class="text-uppercase text-white">Call Us</h5>
+                     <p class="text-white mb-0">+099 345 6789</p>
+                 </div>
+             </div>
+         </div>
+
+         </div>
+     </div>
+
+    </div>
+    <%- include('./common/footer.ejs')%>
+</body>
+</html>

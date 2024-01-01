@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!--* Header Start *--->
+ 
+<!--* Header End *--->
+<div class="container-fluid m-0 p-3">
+  <h1 class="text-center display-1 bg-info">ADD NEW STUDENTS DATA</h1>
+  <div class="row">
+    <div class="col-6 p-3">
+      <form action="/addStnt" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="image1" class="form-label">Student's Photo :</label>
+          <input type="file" class="form-control" id="" placeholder="Upload Image" name="image">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="Name" class="form-label"> Product Name :</label>
+          <input type="text" class="form-control" id="" placeholder="Product Name" name="name">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Student Id :</label>
+          <input type="text" class="form-control" id="" placeholder="Student Id" name="id">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Contact No.:</label>
+          <input type="text" class="form-control" id="" placeholder="contact no" name="contact">
+        </div>
+        </div>
+
+        <div class="col-6 mt-3">
+        <div class="mb-3">
+          <label for="price" class="form-label">Student's Class :</label>
+          <input type="text" class="form-control" id="" placeholder=" Student's Class" name="class">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Father's Name :</label>
+          <input type="text" class="form-control" id="" placeholder="Father's Name" name="father">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">D.O.B Of Student :</label>
+          <input type="text" class="form-control" id="" placeholder=" Student'S D.O.B" name="dob">
+        </div> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    </div>
+<!--* Section content End *--->
+<div class="row d-flex">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="/welcome">Main Page</a></li>
+      <li class="page-item"><a class="page-link" href="/viewStnt">1</a></li>
+      <li class="page-item"><a class="page-link" href="viewTcher">2</a></li>
+      <li class="page-item"><a class="page-link" href="/viewUser">3</a></li>
+      <li class="page-item"><a class="page-link" href="/teacher">4</a></li>
+      <li class="page-item"><a class="page-link" href="/student">Last Page</a></li>
+    </ul>
+  </nav> 
+  </div>
+</body>
+</html>
