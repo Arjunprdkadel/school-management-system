@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>veiw product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid m-3">
+    <div class="row">
+    <div class="col-md-8 col-sm-6 justify-content-center"></div>
+  <h1 class="text-center display-1 bg-info"> TEACHERS DETAILS</h1>
+       
+<% if(tdata.length>0)
+       {%>
+          <table class="table table-bordered table-sm" >
+           <thead>
+                 <tr>
+                    <th>Image</th>
+                     <th>Name</th>
+                     <th>Degree</th>
+                     <th>D.O.B</th> 
+                     <th>Classes</th>
+                     <th>Contact</th>
+                     <th>Address</th>
+                     <th>action</th>        
+                 </tr>
+          </thead>
+
+          <tbody>
+          <% for(var i=0;i<tdata.length; i++)
+               {%>
+                   <tr>
+                       <td><img src="<%= tdata[i].image %>" width="60" height="60"></td>
+                       <td><%= tdata[i].name %></td>
+                       <td><%= tdata[i].degree %></td>
+                       <td><%= tdata[i].dob %></td>
+                       <td><%= tdata[i].classes %></td>
+                       <td><%= tdata[i].contact %></td>
+                       <td><%= tdata[i].address %></td>
+                      <td> 
+                        <a href="/editTcher/<%= tdata[i]._id %>">Edit</a>/
+                        <a href="/deletetcher/<%= tdata[i].id %>">Delete</a>
+                      </td>
+                  </tr>
+               <%}
+          %>
+            </tbody>
+ 
+        </table>
+  <%}
+      else {%>
+            No record found
+           <% } 
+ %>
+     
+<div class="row d-flex">
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="/welcome">Dashboard</a></li>
+    <li class="page-item"><a class="page-link" href="/viewStnt">1</a></li>
+    <li class="page-item"><a class="page-link" href="viewTcher">2</a></li>
+    <li class="page-item"><a class="page-link" href="/viewUser">3</a></li>
+    <li class="page-item"><a class="page-link" href="/teacher">4</a></li>
+    <li class="page-item"><a class="page-link" href="/student">Last Page</a></li>
+  </ul>
+</nav> 
+</div>
+</div>               
+</div>                   
+</div> 
+</body>
+</html>   
